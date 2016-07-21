@@ -1,0 +1,47 @@
+{
+    "name": "Test App",
+    "id": "test",
+    "packaging_format": 1,
+    "requirements": {
+        "yunohost": ">= 2.4"
+    },
+    "description": {
+        "en": "Testing App.",
+        "fr": "Application de test."
+    },
+    "maintainer": {
+        "name": "opi",
+        "email": "opi@zeropi.net"
+    },
+    "multi_instance": "true",
+    "services": [
+        "nginx"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "choice_key",
+                "ask": {
+                    "en": "Key only choice"
+                },
+                "choices": [
+                  "key1",
+                  "key2",
+                  "key3"
+                ],
+                "default": "key1"
+            },
+            {
+                "name": "choice_key_value",
+                "ask": {
+                    "en": "Key/Value choice"
+                },
+                "choices": {
+                  "key1": "value1",
+                  "key2": "value2",
+                  "key3": "value3"
+                },
+                "default": "key2"
+            },        ]
+    }
+}
