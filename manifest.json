@@ -29,7 +29,7 @@
                   "key2",
                   "key3"
                 ],
-                "default": "key1"
+                "default": "key2"
             },
             {
                 "name": "choice_key_value",
